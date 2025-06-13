@@ -72,18 +72,18 @@
                     radioa button (only one option possible)
                     <legend>What is your favorite day of the weekend ?</legend>
                     <!-- wrong use of name -->
-                    <label> </label>Saturday<input id="indoor" type="checkbox" name="favourite-day" value="saturday" checked>
-                    <label><input id="outdoor" type="checkbox" name="favourite-day" value="sunday"> Sunday</label>
+                    <label><input id="indoor" type="radio" name="favourite-day" value="saturday" checked> Saturday</label>
+                    <label><input id="outdoor" type="radio" name="favourite-day" value="sunday"> Sunday</label>
                 </fieldset>
                 <fieldset>
                     <legend>What do you usually do during that day ?</legend>
-                    <input id="family" type="checkbox" name="activities" value="family" checked> <label for="sport">Spend time with family</label>
-                    <input id="sport" type="checkbox" name="activities" value="sport"> <label for="hangout">Play sport</label>
-                    <input id="hangout" type="checkbox" name="hangout" value="hangout"> <label for="cleanup">Hangout with friends</label>
-                    <input id="games" type="checkbox" name="activities" value="games"> <label for="family">Play video or mobile games</label>
-                    <input id="cleanup" type="checkbox" name="activities" value="cleanup"> <label for="games">Cleanup the house</label>
+                    <input id="family" type="checkbox" name="activities" value="family" checked> <label for="family">Spend time with family</label>
+                    <input id="sport" type="checkbox" name="activities" value="sport"> <label for="sport">Play sport</label>
+                    <input id="hangout" type="checkbox" name="activities" value="hangout"> <label for="hangout">Hangout with friends</label>
+                    <input id="games" type="checkbox" name="activities" value="games"> <label for="games">Play video or mobile games</label>
+                    <input id="cleanup" type="checkbox" name="activities" value="cleanup"> <label for="cleanup">Cleanup the house</label>
                 </fieldset>
-                <input required>
+                Enter your name before submit<input type="text" required>
                 <button type="submit">Submit</button>
             </form>
         </section>
